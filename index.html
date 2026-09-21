@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es-BO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beauty Center | Servicio dental, armonización facial y estética en La Paz</title>
+<meta name="description" content="Beauty Center en Calacoto, La Paz: servicio dental, armonización facial y estética. Atención previa cita. Agenda por WhatsApp.">
+<meta name="theme-color" content="#0B2F45">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Beauty Center | Servicio dental, armonización facial y estética">
+<meta property="og:description" content="Sonrisa saludable, rostro armónico. Agenda tu cita por WhatsApp.">
+<meta property="og:locale" content="es_BO">
+<link rel="icon" type="image/png" href="assets/emblema.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Marcellus&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Beauty Center",
+  "description": "Servicio dental, armonización facial y estética",
+  "telephone": "+59173058812",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Jaime Mendoza esq. Enrique Peñaranda Nro 992, Torre Chronos, Calacoto-Montenegro",
+    "addressLocality": "La Paz",
+    "addressCountry": "BO"
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61552184340074",
+    "https://www.tiktok.com/@beautycenterbolivia"
+  ]
+}
+</script>
+
+<style>
+:root{
+  /* Colores del logo */
+  --azul:#009FE3;          /* azul de marca: formas grandes y decoración */
+  --hoja:#7EB22A;          /* verde de marca: formas grandes y decoración */
+  /* Derivados con contraste para texto y botones */
+  --azul-tinta:#0A5C8A;
+  --hoja-tinta:#48720F;
+  --noche:#0B2F45;
+  --hielo:#F6FBFD;
+  --niebla:#E3F3FB;
+  --gris:#4F6573;
+  --linea:#D4E5EE;
+
+  --serif:"Marcellus",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;font-family:var(--sans);font-size:1.0625rem;line-height:1.65;color:var(--noche);background:var(--hielo);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;color:var(--noche);margin:0;text-wrap:balance}
+p{text-wrap:pretty}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.i{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+:focus-visible{outline:3px solid var(--azul);outline-offset:3px;border-radius:6px}
+
+/* ---------- Botones ---------- */
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:background-color .18s,color .18s,border-color .18s;cursor:pointer}
+.btn .i{width:20px;height:20px;flex:none}
+.btn-primario{background:var(--azul-tinta);color:#fff}
+.btn-primario:hover{background:var(--noche)}
+.btn-borde{border-color:var(--azul-tinta);color:var(--azul-tinta)}
+.btn-borde:hover{background:var(--azul-tinta);color:#fff}
+.btn-claro{background:#fff;color:var(--noche)}
+.btn-claro:hover{background:var(--niebla)}
+.btn-sm{padding:10px 20px;font-size:.95rem}
+
+/* ---------- Encabezado ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(246,251,253,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:44px;width:auto}
+.brand span{white-space:nowrap;font-family:var(--serif);font-size:1.55rem;line-height:1;color:var(--azul-tinta)}
+.brand b{font-weight:400;color:var(--hoja-tinta)}
+.top nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.top nav a{text-decoration:none;font-weight:600;font-size:.97rem;color:var(--gris);padding:6px 0;border-bottom:2px solid transparent}
+.top nav a:hover{color:var(--noche);border-bottom-color:var(--hoja)}
+
+/* ---------- Portada ---------- */
+.hero{position:relative;overflow:hidden;padding:72px 0 80px;background:var(--hielo)}
+.hero::before{ /* disco grande: eco del arco del logo */
+  content:"";position:absolute;right:-3%;top:50%;width:min(600px,50vw);aspect-ratio:1;transform:translateY(-50%);
+  border-radius:50%;background:var(--niebla)}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:40px}
+.hero h1{font-size:clamp(2.7rem,5.6vw,4.4rem);line-height:1.05;letter-spacing:-.01em;max-width:14ch}
+.lead{font-size:1.2rem;color:var(--gris);max-width:36ch;margin:24px 0 0}
+.acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.datos{display:flex;flex-wrap:wrap;margin:44px 0 0;padding:0}
+.datos div{padding:0 26px;border-left:1px solid var(--linea)}
+.datos div:first-child{padding-left:0;border-left:0}
+.datos dt{font-size:.85rem;color:var(--gris)}
+.datos dd{margin:0;font-weight:700}
+.hero-art{position:relative;justify-self:center;width:min(430px,100%);animation:entrar 1s cubic-bezier(.2,.7,.2,1) both}
+.hero-art img{width:100%;height:auto}
+@keyframes entrar{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* ---------- Secciones ---------- */
+.sec{padding:96px 0}
+.sec-head{max-width:620px;margin-bottom:48px}
+.sec-head h2,.about h2,.loc h2{font-size:clamp(2rem,4.2vw,3rem);line-height:1.1}
+.sec-head p{margin:14px 0 0;color:var(--gris)}
+
+/* Servicios: tarifario */
+.grupos{border-top:1px solid var(--linea)}
+.grupo{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;padding:52px 0;border-bottom:1px solid var(--linea)}
+.grupo .ico{width:46px;height:46px;color:var(--azul-tinta)}
+.grupo:nth-child(even) .ico{color:var(--hoja-tinta)}
+.grupo h3{font-size:2.1rem;line-height:1.12;margin:18px 0 10px}
+.grupo .desc{margin:0;color:var(--gris);max-width:40ch}
+.tarifa{list-style:none;margin:0;padding:0}
+.tarifa li{padding:11px 0}
+.tarifa .fila{display:flex;align-items:flex-end;gap:10px}
+.tarifa .n{font-weight:600}
+.tarifa small{display:block;font-weight:400;font-size:.92rem;color:var(--gris);line-height:1.4;margin-top:2px}
+.tarifa .pts{flex:1;min-width:24px;border-bottom:2px dotted #A9C9DA;margin-bottom:.45em}
+.tarifa .p{font-weight:800;color:var(--azul-tinta);white-space:nowrap}
+.pendiente{margin:0 0 4px;color:var(--gris)}
+.consultar{display:inline-block;margin-top:14px;font-weight:700;color:var(--azul-tinta);text-underline-offset:5px}
+.consultar:hover{color:var(--noche)}
+
+/* Nosotros */
+.about{background:#fff;border-block:1px solid var(--linea)}
+.about-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;align-items:center}
+.foto{margin:0;position:relative;isolation:isolate;width:min(400px,100%);justify-self:center}
+.foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:56% 22%;border-radius:999px 999px 24px 24px}
+.foto::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--hoja);border-radius:999px 999px 24px 24px;z-index:-1}
+.about-txt p{color:var(--gris);max-width:52ch;margin:0 0 16px}
+.about-txt h2{margin-bottom:22px}
+.firma{font-weight:700;color:var(--noche)!important}
+.about-txt .btn{margin-top:14px}
+
+/* Videos */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,300px));gap:22px;margin-bottom:36px}
+.vgrid video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#0B2F45;border-radius:20px}
+.vgrid figure{margin:0}
+.vgrid figure img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:20px}
+.vgrid blockquote{margin:0;min-width:0}
+.vgrid[hidden]{display:none}
+
+/* Ubicación */
+.loc{background:var(--niebla)}
+.loc-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:stretch}
+.info{margin:28px 0 0;display:grid;gap:22px}
+.info dt{font-size:.9rem;font-weight:700;color:var(--hoja-tinta)}
+.info dd{margin:2px 0 0}
+.info a{text-underline-offset:4px}
+.loc .acciones{margin-top:34px}
+.mapa{border-radius:24px;overflow:hidden;min-height:380px;background:#cfe6f3}
+.mapa iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* Cierre */
+.cierre{position:relative;overflow:hidden;background:var(--noche);color:#fff;padding:96px 0}
+.cierre::before{ /* arco del logo */
+  content:"";position:absolute;right:-180px;top:-300px;width:640px;aspect-ratio:1;border-radius:50%;
+  border:44px solid transparent;border-top-color:var(--hoja);border-right-color:var(--hoja);opacity:.4}
+.cierre .wrap{position:relative}
+.cierre h2{color:#fff;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.08}
+.cierre p{margin:18px 0 0;max-width:44ch;color:#CFE3EE}
+.cierre .btn{margin-top:32px}
+
+/* Pie */
+.pie{padding:44px 0;background:var(--hielo)}
+.pie .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.pie img{height:78px;width:auto}
+.pie ul{display:flex;flex-wrap:wrap;gap:22px;list-style:none;margin:0;padding:0}
+.pie a{font-weight:600;color:var(--azul-tinta);text-underline-offset:4px}
+.pie small{color:var(--gris);display:block;width:100%}
+
+/* WhatsApp flotante */
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:10px;background:#147A3D;color:#fff;padding:15px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 8px 22px rgba(11,47,69,.28)}
+.fab .i{width:26px;height:26px}
+.fab span{display:none}
+.fab:hover{background:#0f6432}
+
+.aviso{padding:40px 0;text-align:center}
+
+/* ---------- Móvil ---------- */
+@media (max-width:860px){
+  .top nav{display:none}
+  .top .wrap{gap:12px}
+  .brand{gap:10px}
+  .brand img{height:38px}
+  .brand span{font-size:1.3rem}
+  .top .btn-sm{padding:9px 16px;font-size:.9rem}
+  .hero{padding:48px 0 64px}
+  .hero::before{width:120vw;right:-40vw;top:auto;bottom:-20vw;transform:none}
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .hero-art{width:min(250px,64%);justify-self:start;order:2;margin-left:auto}
+  .datos{flex-direction:column;gap:14px}
+  .datos div{padding:0;border-left:0}
+  .sec{padding:64px 0}
+  .grupo{grid-template-columns:1fr;gap:20px;padding:40px 0}
+  .about-grid,.loc-grid{grid-template-columns:1fr;gap:44px}
+  .foto{width:min(340px,86%)}
+  .mapa,.mapa iframe{min-height:320px}
+  .cierre{padding:72px 0}
+  .cierre::before{right:-260px;top:-360px}
+}
+@media (min-width:861px){
+  .fab span{display:inline;padding-right:8px}
+  .fab{padding:14px 20px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Íconos -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+  <symbol id="i-sonrisa" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></symbol>
+  <symbol id="i-rostro" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></symbol>
+  <symbol id="i-brillo" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Beauty Center, ir al inicio">
+      <img src="assets/emblema.png" alt="" width="36" height="44">
+      <span>Beauty <b>Center</b></span>
+    </a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#videos">Consultorio</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primario btn-sm" data-wa href="#">Agendar cita</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Sonrisa saludable, rostro armónico.</h1>
+        <p class="lead">Servicio dental, armonización facial y estética en un solo lugar, en Calacoto, La Paz.</p>
+        <div class="acciones">
+          <a class="btn btn-primario" data-wa href="#"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Agendar por WhatsApp</a>
+          <a class="btn btn-borde" href="#servicios">Ver servicios</a>
+        </div>
+        <dl class="datos" id="hero-datos"></dl>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img src="assets/emblema.png" alt="" width="600" height="734">
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="servicios">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Servicios y precios</h2>
+        <p>Atendemos previa cita. Escríbenos y coordinamos el día y la hora que te acomode.</p>
+      </div>
+      <div class="grupos" id="servicios-lista"></div>
+    </div>
+  </section>
+
+  <section class="sec about" id="nosotros">
+    <div class="wrap about-grid">
+      <figure class="foto">
+        <img src="assets/profesional.jpg" alt="Profesional de Beauty Center sonriendo, con uniforme celeste, dentro del consultorio" width="1040" height="857" loading="lazy">
+      </figure>
+      <div class="about-txt">
+        <h2 id="sobre-titulo"></h2>
+        <div id="sobre-texto"></div>
+        <p class="firma" id="sobre-firma" hidden></p>
+        <a class="btn btn-borde" data-wa href="#">Escríbenos por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="videos">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Conoce el consultorio</h2>
+        <p>Mira cómo es nuestro espacio antes de tu primera cita.</p>
+      </div>
+      <div class="vgrid" id="videos-grid" hidden></div>
+      <a class="btn btn-borde" id="tiktok-link" href="#" target="_blank" rel="noopener">Ver más en TikTok</a>
+    </div>
+  </section>
+
+  <section class="sec loc" id="ubicacion">
+    <div class="wrap loc-grid">
+      <div>
+        <h2>Cómo llegar</h2>
+        <dl class="info">
+          <div><dt>Dirección</dt><dd id="i-dir"></dd></div>
+          <div><dt>Horario</dt><dd id="i-hor"></dd></div>
+          <div><dt>Teléfono y WhatsApp</dt><dd><a id="i-tel" href="#"></a></dd></div>
+        </dl>
+        <div class="acciones">
+          <a class="btn btn-primario" id="maps-link" href="#" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>Abrir en Google Maps</a>
+          <a class="btn btn-borde" id="llamar-link" href="#"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-tel"/></svg>Llamar</a>
+        </div>
+      </div>
+      <div class="mapa">
+        <iframe id="mapa" title="Mapa de ubicación de Beauty Center" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <div class="wrap">
+      <h2>Agenda tu cita</h2>
+      <p>Atendemos previa cita. Escríbenos por WhatsApp y te confirmamos día y hora.</p>
+      <a class="btn btn-claro" data-wa href="#"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Agendar por WhatsApp</a>
+    </div>
+  </section>
+
+  <noscript>
+    <div class="wrap aviso">
+      <p>Para ver los servicios activa JavaScript, o escríbenos por WhatsApp al +591 73058812.</p>
+    </div>
+  </noscript>
+
+</main>
+
+<footer class="pie">
+  <div class="wrap">
+    <img src="assets/logo.png" alt="Beauty Center. Servicio dental, armonización facial y estética" width="478" height="500" loading="lazy">
+    <ul>
+      <li><a id="fb-link" href="#" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a id="tt-link" href="#" target="_blank" rel="noopener">TikTok</a></li>
+    </ul>
+    <small>© <span id="anio"></span> Beauty Center. La Paz, Bolivia.</small>
+  </div>
+</footer>
+
+<a class="fab" data-wa href="#" aria-label="Escribir por WhatsApp">
+  <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span>
+</a>
+
+<script src="datos.js"></script>
+<script>
+(function () {
+  "use strict";
+  var N = NEGOCIO;
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function $(sel) { return document.querySelector(sel); }
+  function wa(msg) { return "https://wa.me/" + N.whatsapp + "?text=" + encodeURIComponent(msg); }
+  function horario() { return [N.dias, N.horario].filter(Boolean).join(", "); }
+
+  /* Botones de WhatsApp */
+  document.querySelectorAll("[data-wa]").forEach(function (a) {
+    a.href = wa(a.getAttribute("data-wa") || N.mensajeWhatsapp);
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+
+  /* Datos rápidos de la portada */
+  $("#hero-datos").innerHTML =
+    "<div><dt>Atención</dt><dd>" + esc(N.atencion) + "</dd></div>" +
+    "<div><dt>Horario</dt><dd>" + esc(horario()) + "</dd></div>";
+
+  /* Servicios */
+  $("#servicios-lista").innerHTML = SERVICIOS.map(function (s) {
+    var items = (s.items || []).map(function (it) {
+      return '<li><div class="fila"><span class="n">' + esc(it.nombre) +
+        '</span><span class="pts" aria-hidden="true"></span><span class="p">' +
+        esc(it.precio || "Consultar") + "</span></div>" +
+        (it.detalle ? "<small>" + esc(it.detalle) + "</small>" : "") + "</li>";
+    }).join("");
+    var link = wa("Hola, quisiera información sobre " + s.titulo + " en " + N.nombre + ".");
+    return '<article class="grupo">' +
+      "<div>" +
+        '<svg class="i ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-' + esc(s.icono || "brillo") + '"/></svg>' +
+        "<h3>" + esc(s.titulo) + "</h3>" +
+        '<p class="desc">' + esc(s.descripcion || "") + "</p>" +
+      "</div>" +
+      "<div>" +
+        (items ? '<ul class="tarifa">' + items + "</ul>"
+               : '<p class="pendiente">Consulta el detalle y los precios por WhatsApp.</p>') +
+        '<a class="consultar" href="' + link + '" target="_blank" rel="noopener">Consultar por WhatsApp</a>' +
+      "</div></article>";
+  }).join("");
+
+  /* Nosotros */
+  $("#sobre-titulo").textContent = SOBRE.titulo;
+  $("#sobre-texto").innerHTML = SOBRE.parrafos.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
+  if (SOBRE.profesional) {
+    var f = $("#sobre-firma"); f.textContent = SOBRE.profesional; f.hidden = false;
+  }
+
+  /* Videos */
+  var vg = $("#videos-grid");
+  (typeof FOTOS !== "undefined" ? FOTOS : []).forEach(function (f) {
+    var fig = document.createElement("figure");
+    var img = document.createElement("img");
+    img.src = f.archivo; img.alt = f.descripcion || ""; img.loading = "lazy";
+    fig.appendChild(img);
+    vg.appendChild(fig);
+  });
+  (VIDEOS_PROPIOS || []).forEach(function (v) {
+    var el = document.createElement("video");
+    el.src = v.archivo; el.controls = true; el.playsInline = true; el.preload = "metadata";
+    if (v.portada) el.poster = v.portada;
+    vg.appendChild(el);
+  });
+  var usaTikTok = false;
+  (VIDEOS_TIKTOK || []).forEach(function (url) {
+    var m = String(url).match(/\/video\/(\d+)/);
+    if (!m) return;
+    var bq = document.createElement("blockquote");
+    bq.className = "tiktok-embed";
+    bq.setAttribute("cite", url);
+    bq.setAttribute("data-video-id", m[1]);
+    bq.style.maxWidth = "325px"; bq.style.minWidth = "0";
+    bq.innerHTML = "<section></section>";
+    vg.appendChild(bq);
+    usaTikTok = true;
+  });
+  if (vg.children.length) vg.hidden = false;
+  if (usaTikTok) {
+    var sc = document.createElement("script");
+    sc.async = true; sc.src = "https://www.tiktok.com/embed.js";
+    document.body.appendChild(sc);
+  }
+  $("#tiktok-link").href = N.tiktok;
+  $("#tt-link").href = N.tiktok;
+  $("#fb-link").href = N.facebook;
+
+  /* Ubicación */
+  $("#i-dir").textContent = N.direccion;
+  $("#i-hor").textContent = horario() + " (" + N.atencion.toLowerCase() + ")";
+  var tel = $("#i-tel");
+  tel.textContent = N.telefono;
+  tel.href = "tel:+" + N.whatsapp;
+  $("#llamar-link").href = "tel:+" + N.whatsapp;
+  $("#maps-link").href = N.mapaEnlace ||
+    "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(N.mapa);
+  $("#mapa").src = "https://www.google.com/maps?q=" + encodeURIComponent(N.mapa) + "&output=embed";
+
+  $("#anio").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
